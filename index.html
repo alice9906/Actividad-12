@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes</title>
+
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <h1>Chuck Norris Jokes 😎</h1>
+
+        <ul>
+            <li v-for="(joke, index) in chuck" :key="index">
+                {{ joke.value }}
+            </li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
